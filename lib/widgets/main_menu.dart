@@ -22,14 +22,17 @@ class MainMenu extends StatelessWidget {
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
         child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
           color: Colors.black.withAlpha(100),
           child: FittedBox(
             fit: BoxFit.scaleDown,
             child: Padding(
-              padding:
-                  const EdgeInsets.symmetric(vertical: 20, horizontal: 100),
+              padding: const EdgeInsets.symmetric(
+                vertical: 20,
+                horizontal: 100,
+              ),
               child: Wrap(
                 direction: Axis.vertical,
                 crossAxisAlignment: WrapCrossAlignment.center,
@@ -37,10 +40,7 @@ class MainMenu extends StatelessWidget {
                 children: [
                   const Text(
                     'Dino Run',
-                    style: TextStyle(
-                      fontSize: 50,
-                      color: Colors.white,
-                    ),
+                    style: TextStyle(fontSize: 50, color: Colors.white),
                   ),
                   ElevatedButton(
                     onPressed: () {
@@ -48,12 +48,7 @@ class MainMenu extends StatelessWidget {
                       game.overlays.remove(MainMenu.id);
                       game.overlays.add(Hud.id);
                     },
-                    child: const Text(
-                      'Play',
-                      style: TextStyle(
-                        fontSize: 30,
-                      ),
-                    ),
+                    child: const Text('Play', style: TextStyle(fontSize: 30)),
                   ),
                   ElevatedButton(
                     onPressed: () {
@@ -62,9 +57,7 @@ class MainMenu extends StatelessWidget {
                     },
                     child: const Text(
                       'Settings',
-                      style: TextStyle(
-                        fontSize: 30,
-                      ),
+                      style: TextStyle(fontSize: 30),
                     ),
                   ),
                 ],

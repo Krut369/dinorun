@@ -65,10 +65,7 @@ class Hud extends StatelessWidget {
                 return Row(
                   children: List.generate(5, (index) {
                     if (index < lives) {
-                      return const Icon(
-                        Icons.favorite,
-                        color: Colors.red,
-                      );
+                      return const Icon(Icons.favorite, color: Colors.red);
                     } else {
                       return const Icon(
                         Icons.favorite_border,
@@ -78,7 +75,7 @@ class Hud extends StatelessWidget {
                   }),
                 );
               },
-            )
+            ),
           ],
         ),
       ),

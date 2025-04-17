@@ -31,10 +31,7 @@ class EnemyManager extends Component with HasGameReference<DinoRun> {
 
     // Help in setting all enemies on ground.
     enemy.anchor = Anchor.bottomLeft;
-    enemy.position = Vector2(
-      game.virtualSize.x + 32,
-      game.virtualSize.y - 24,
-    );
+    enemy.position = Vector2(game.virtualSize.x + 32, game.virtualSize.y - 24);
 
     // If this enemy can fly, set its y position randomly.
     if (enemyData.canFly) {

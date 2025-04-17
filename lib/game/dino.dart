@@ -9,13 +9,7 @@ import '/game/audio_manager.dart';
 import '/models/player_data.dart';
 
 /// This enum represents the animation states of [Dino].
-enum DinoAnimationStates {
-  idle,
-  run,
-  kick,
-  hit,
-  sprint,
-}
+enum DinoAnimationStates { idle, run, kick, hit, sprint }
 
 // This represents the dino character of this game.
 class Dino extends SpriteAnimationGroupComponent<DinoAnimationStates>
@@ -70,7 +64,7 @@ class Dino extends SpriteAnimationGroupComponent<DinoAnimationStates>
   bool isHit = false;
 
   Dino(Image image, this.playerData)
-      : super.fromFrameData(image, _animationMap);
+    : super.fromFrameData(image, _animationMap);
 
   @override
   void onMount() {

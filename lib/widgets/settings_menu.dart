@@ -30,11 +30,14 @@ class SettingsMenu extends StatelessWidget {
             height: MediaQuery.of(context).size.height * 0.8,
             child: Card(
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20)),
+                borderRadius: BorderRadius.circular(20),
+              ),
               color: Colors.black.withAlpha(100),
               child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 20, horizontal: 100),
+                padding: const EdgeInsets.symmetric(
+                  vertical: 20,
+                  horizontal: 100,
+                ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -44,18 +47,16 @@ class SettingsMenu extends StatelessWidget {
                         return SwitchListTile(
                           title: const Text(
                             'Music',
-                            style: TextStyle(
-                              fontSize: 30,
-                              color: Colors.white,
-                            ),
+                            style: TextStyle(fontSize: 30, color: Colors.white),
                           ),
                           value: bgm,
                           onChanged: (bool value) {
                             Provider.of<Settings>(context, listen: false).bgm =
                                 value;
                             if (value) {
-                              AudioManager.instance
-                                  .startBgm('8BitPlatformerLoop.wav');
+                              AudioManager.instance.startBgm(
+                                '8BitPlatformerLoop.wav',
+                              );
                             } else {
                               AudioManager.instance.stopBgm();
                             }
@@ -69,10 +70,7 @@ class SettingsMenu extends StatelessWidget {
                         return SwitchListTile(
                           title: const Text(
                             'Effects',
-                            style: TextStyle(
-                              fontSize: 30,
-                              color: Colors.white,
-                            ),
+                            style: TextStyle(fontSize: 30, color: Colors.white),
                           ),
                           value: sfx,
                           onChanged: (bool value) {

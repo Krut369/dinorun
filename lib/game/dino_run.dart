@@ -143,8 +143,9 @@ class DinoRun extends FlameGame with TapDetector, HasCollisionDetection {
 
   /// This method reads [PlayerData] from the hive box.
   Future<PlayerData> _readPlayerData() async {
-    final playerDataBox =
-        await Hive.openBox<PlayerData>('DinoRun.PlayerDataBox');
+    final playerDataBox = await Hive.openBox<PlayerData>(
+      'DinoRun.PlayerDataBox',
+    );
     final playerData = playerDataBox.get('DinoRun.PlayerData');
 
     // If data is null, this is probably a fresh launch of the game.
@@ -165,10 +166,7 @@ class DinoRun extends FlameGame with TapDetector, HasCollisionDetection {
     // If data is null, this is probably a fresh launch of the game.
     if (settings == null) {
       // In such cases store default values in hive.
-      await settingsBox.put(
-        'DinoRun.Settings',
-        Settings(bgm: true, sfx: true),
-      );
+      await settingsBox.put('DinoRun.Settings', Settings(bgm: true, sfx: true));
     }
 
     // Now it is safe to return the stored value.
