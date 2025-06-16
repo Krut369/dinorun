@@ -12,7 +12,7 @@
 
 | Menu | Jump | Hit |
 |------|------|-----|
-| ![Menu]![alt text](image.png) | ![Jump]![alt text](image-1.png) | ![Hit]![alt text](image-2.png)|
+| ![Menu](image.png) | ![Jump](image-1.png) | ![Hit](image-2.png) |
 
 ---
 
