@@ -1,7 +1,4 @@
-
----
-
-````markdown
+markdown
 # 🦖 Dino Run
 
 **Dino Run** is a 2D infinite side-scroller game built using the [Flame Engine](https://flame-engine.org/). It features smooth controls, pixel graphics, and an addictive gameplay loop.
@@ -102,7 +99,7 @@ Join the [Discord server](https://discord.gg/xHu3aUQGsJ) to discuss game dev, Fl
 
 > Created with ❤️ by [@ufrshubham](https://github.com/ufrshubham)
 
-```
+
 
 ---
 
