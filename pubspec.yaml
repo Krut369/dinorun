@@ -17,6 +17,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: 1.0.8
+  device_preview: ^1.2.0
 
 dev_dependencies:
   hive_generator: 2.0.1
