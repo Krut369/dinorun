@@ -13,7 +13,13 @@
 | Menu | Jump | Hit |
 |------|------|-----|
 | ![Menu](image.png) | ![Jump](image-1.png) | ![Hit](image-2.png) |
-
+<table>
+  <tr>
+    <td><img src="image.png.png" width="200" /></td>
+    <td><img src="image-1.png" width="200" /></td>
+    <td><img src="image-2.png" width="200" /></td>
+  </tr>
+</table>
 ---
 
 ## 📦 Downloads
